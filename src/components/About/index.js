@@ -24,14 +24,14 @@ const About = () => {
     <>
       <div className="container about-page">
         <div className="text-zone">
-          <h1>
+          <h1 id="about-heading">
             <AnimatedLetters
               letterClass={letterClass}
               strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
               idx={15}
             />
           </h1>
-          <p>
+          <p >
             Greetings! I am Vishal. I am a Software Engineer with 1.5 years of
             hands-on experience in full stack web development. I am a dedicated
             and result-driven developer who thrives in fast paced work

@@ -34,27 +34,43 @@
   input[type='text'],
   input[type='email'] {
     width: 100%;
-    border: 0;
+    border: none;
+    border-radius: 4px;
     background: #115173;
-    height: 40px;
-    font-size: 16px;
+    height: 30px;
     color: #fff;
     padding: 0 20px;
     box-sizing: border-box;
   }
+  input[type='text'],
+  input[type='email']::placeholder {
+    font-size: 14px;
+  }
+  textarea::placeholder {
+    font-size: 14px;
+  }
+  input:focus, textarea:focus {
+    outline: none;
+  }
+  input {
+    font-size: 13px;
+  }
   textarea {
     width: 100%;
     border: 0;
+    border-radius: 4px;
     background: #115173;
     height: 30px;
-    font-size: 16px;
+    font-size: 13px;
     color: #fff;
     padding: 20px;
     min-height: 100px;
     box-sizing: border-box;
+    resize: none;
   }
 
   .flat-button {
+    margin-top: 0vw;
     color: #ffd700;
     background: 0 0;
     font: 11px;
@@ -98,7 +114,13 @@
 .contact-me {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  top:-10vw;
   // gap: 50px;
+}
+
+.contact-form-wrapper {
+  margin-top: -12vw;
 }
 
 .contact-card {
@@ -117,4 +139,38 @@
   margin-top: 6px;
   margin-left: 16px;
   margin-right: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .text-zone {
+    #contact-heading  {
+        position: relative;
+        left: 15%;
+        top: 1vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-card{
+      width: 70%;
+      margin-bottom: 13vw;
+    }
+
+    p {
+        width: 70%; /* Adjust the width to fit content within .text-zone */
+        margin-left: 15%; /* Align to the left within .text-zone */
+        margin-right: 10%;
+    }
+    .contact-form {
+      position: relative;
+      left: 15%;
+      width: 80%;
+    }
+    .flat-button {
+      position: relative;
+      left: -5%;
+    }
+}
+.envelope-image {
+    display: none;
+}
 }

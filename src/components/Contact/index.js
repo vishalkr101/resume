@@ -41,7 +41,7 @@ const Contact = () => {
     <>
       <div className="container contact-page">
         <div className="text-zone">
-          <div className="contact-me">
+          <div id="contact-heading"className="contact-me">
             <h1>
               <AnimatedLetters
                 strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
@@ -62,6 +62,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
+          <div className='contact-form-wrapper'>
           <p>
             Hi, you can reach out to me for any query or just to say Hello I
             would really appreciate that. Just fill out the below form.
@@ -100,6 +101,7 @@ const Contact = () => {
                 </li>
               </ul>
             </form>
+          </div>
           </div>
         </div>
         <div className="envelope-image">

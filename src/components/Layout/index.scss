@@ -1,12 +1,17 @@
-.page{
+.page {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: relative; /* Change to relative to fit within the viewport */
 }
 
+.html-tag {
+    top:45px;
+    margin-left: -1vw;
+}
 .top-tags {
     bottom: auto;
-    top:35px;
+    top: 70px;
+    margin-left: -0.5vw;
 }
 
 .tags {
@@ -15,20 +20,23 @@
     position: absolute;
     bottom: 0;
     left: 120px;
-    font-size: 18px;
+    font-size: 18px; /* Responsive font size */
     font-family: 'La Belle Aurore';
 }
 
+.bottom-tags {
+    bottom: 35px;
+    margin-left: -0.5vw;
+}
 .bottom-tag-html {
-    margin-left: -20px;
+    margin-left: -1vw;
 }
 
 .container {
     width: 100%;
-    will-change: contents;
     height: 90%;
-    min-height: 566px;
-    position: absolute;
+    min-height: 601px;
+    position: relative; /* Change to relative */
     opacity: 0;
     top: 5%;
     margin: 0 auto;
@@ -108,6 +116,41 @@
     .text-animate-hover {
         &:hover {
             color: #fff;
+        }
+    }
+}
+
+.text-animate-hover {
+    &:hover {
+        color: #fff;
+    }
+}
+
+/* Media Query for fine-tuning on smaller screens */
+@media screen and (max-width: 768px) {
+    .tags {
+        display: none;
+    }
+
+    .container {
+        top: 10%; /* Adjusted top position */
+        overflow: hidden;
+    }
+
+    .about-page, .contact-page {
+        .text-zone {
+            width: 90%; /* Adjusted width for smaller screens */
+            left: 5%; /* Adjusted left position */
+        }
+
+        h1 {
+            font-size: 8vw; /* Adjusted font size for smaller screens */
+            margin-bottom: 6vw; /* Adjusted margin */
+            left: 0; /* Resetting left position */
+        }
+
+        p {
+            font-size: 2vw; /* Adjusted font size for smaller screens */
         }
     }
 }

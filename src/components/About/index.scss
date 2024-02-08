@@ -78,3 +78,20 @@
         transform: rotateX(90deg);
     }
 }
+
+@media screen and (max-width: 768px) {
+    .text-zone {
+        #about-heading  {
+            position: relative;
+            left: 15%;
+        }
+        p {
+            width: 70%; /* Adjust the width to fit content within .text-zone */
+            margin-left: 15%; /* Align to the left within .text-zone */
+            margin-right: 15%;
+        }
+    }
+    .stage-cube-cont {
+        display: none;
+    }
+}
