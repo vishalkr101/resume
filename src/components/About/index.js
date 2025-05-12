@@ -31,24 +31,24 @@ const About = () => {
               idx={15}
             />
           </h1>
-          <p >
-            Greetings! I am Vishal. I am a Software Engineer with 2 years of
-            hands-on experience in full stack web development. I am a dedicated
-            and result-driven developer who thrives in fast paced work
-            environment. I put complex ideas of mind on web and send it to the
-            world.
+          <p>
+            Hello! I’m Vishal, a Software Engineer with 3 years of
+            experience in full stack web development. I specialize in building
+            scalable, responsive, and user-centric web applications using
+            technologies like React.js, Node.js, MongoDB and Java.
           </p>
           <p>
-            I have hands-on experience in multiple programming languages and
-            frameworks such as Java, ReactJS & NodeJS and I have contributed to
-            medium and large scaled projects such as food delivery platforms which
-            operates worldwide.
+            Over the years, I’ve contributed to both mid-size and large-scale
+            projects — including global food delivery platforms — where I turned
+            complex product ideas into reliable and efficient digital solutions.
           </p>
           <p>
-            I am a sportsperson who loves playing and watching football. I am a
-            team person I can work in team of any size or as an individual. I
-            have a positive mindset which helps me to go through complex situations
-            and improve my critical thinking and makes me a better developer.
+            Beyond code, I’m a sportsperson at heart — a football enthusiast who
+            thrives on teamwork and discipline. Whether working independently or
+            collaborating with teams of any size, I bring a positive mindset,
+            strong problem-solving skills, and a drive to continuously improve.
+            I believe in writing clean, maintainable code that makes a real
+            impact.
           </p>
         </div>
 
